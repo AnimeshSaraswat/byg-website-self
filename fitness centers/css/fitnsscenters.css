@@ -1,0 +1,94 @@
+.fitness-centers {
+  background: #333;
+  color: #fff;
+  font-family: sans
+}
+.fitness-centers h3 {
+  font-weight: 600;
+  position: relative;
+}
+.card-layout {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.card-layout .fa-chevron-right {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  right: 40px;
+  font-size: 65px;
+  top: -120px;
+  cursor: pointer;
+}
+.card-layout .fa-chevron-left {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  left: 40px;
+  font-size: 65px;
+  top: -120px;
+  cursor: pointer;
+}
+.card-vertical {
+  width: 25%;
+  color: black;
+  border: 1px solid transparent;
+  flex: 0 0 auto;
+  
+}
+.card-vertical .card-img {
+  height: 170px;
+  width: 100%;
+  overflow: hidden;
+}
+.card-vertical .card-img .img-responsive {
+  width: 100%;
+}
+.card-vertical .content-area {
+  background: #fff;
+  overflow: hidden;
+  padding: 10px;
+}
+.card-vertical .content-area h5 {
+  margin-bottom: 0px;
+}
+.card-vertical .content-area .sub-head {
+  margin: 0px;
+  color: #aaa;
+  font-size: 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.card-vertical div span {
+  display: inline-block;
+}
+.card-vertical div span:last-child {
+  float: right;
+}
+.card-vertical .content-area div {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-vertical .content-area div span:last-child {
+  font-size: 14px;
+  color: green;
+  padding: 2px;
+  border: 1px solid green;
+}
+.card-vertical div span .fa {
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-vertical {
+    width: 90%;
+  }
+}
