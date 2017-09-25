@@ -1,0 +1,25 @@
+.offer-section .custom-bg-1 {
+  background: url('../../images/ropes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -25px;
+  height: 225px;
+  border-right: 5px solid #fff;
+}
+.offer-section .custom-bg-2 {
+  background: url('../../images/yoga.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 225px;
+  border-left: 2.5px solid #fff;
+  border-right: 2.5px solid #fff;
+}
+.offer-section .custom-bg-3 {
+  background: url('../../images/armwrestel.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 225px;
+  border-left: 5px solid #fff;
+}
