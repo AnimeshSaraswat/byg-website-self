@@ -1,0 +1,59 @@
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+.card-wrapper {
+  width: 50%;
+  border: 1px solid #ccc;
+}
+
+.card-wrapper .card-img {
+  background-image: url('../../images/zumba.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-text-area {
+  padding: 10px 15px;
+}
+.main-head {
+  font-weight: 600;
+  font-size: 18px;
+}
+.gym-address {
+  font-size: 12px;
+  color: #aaa;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+.rating-review {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.rating-review .fa{
+  color: red;
+  padding-right: 5px;
+}
+.rating-review .rating {
+  padding-right: 5px;
+  border-right: 1px solid #ddd;
+  margin-right: 5px;
+}
+.tag-area {
+  margin-top: 10px;
+}
+.tag-area span {
+  background: #eee;
+  color: #999;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-right: 3px;
+}
+.category {
+  padding: 3px 10px;
+  color: #06A706;
+  border: 1px solid #06A706;
+  display: inline-block;
+  margin-top: 20px;
+}

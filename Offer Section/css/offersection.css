@@ -1,25 +1,84 @@
-.offer-section .custom-bg-1 {
+
+/* Workout */
+.offer-section .workout {
   background: url('../../images/ropes.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -25px;
-  height: 225px;
+  height: 250px;
   border-right: 5px solid #fff;
+  position: relative;
 }
-.offer-section .custom-bg-2 {
+.workout p, .lowest-price p, .invite p {
+  margin: 0;
+  color: #fff;
+}
+.workout .text-area, .lowest-price .text-area, .invite .text-area {
+  position: absolute;
+  bottom: 40px;
+}
+.workout p:first-child {
+  color: red;
+  font-size: 40px;
+  line-height: 0.7;
+}
+.workout p:first-child span {
+  font-size: 70px;
+}
+.workout p:nth-child(2){
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.workout button {
+  border: none;
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+}
+.workout button span {
+  color: red;
+}
+
+/* Lowest Price */
+.offer-section .lowest-price {
   background: url('../../images/yoga.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 225px;
+  height: 250px;
   border-left: 2.5px solid #fff;
   border-right: 2.5px solid #fff;
+  position: relative;
 }
-.offer-section .custom-bg-3 {
+.lowest-price p {
+  line-height: 1.1;
+  font-weight: 600;
+}
+.lowest-price p:first-child {
+  font-size: 18px;
+}
+.lowest-price p:nth-child(2) {
+  font-size: 30px;
+}
+.lowest-price p:last-child {
+  font-size: 13px;
+}
+
+/* Invite */
+.offer-section .invite {
   background: url('../../images/armwrestel.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 225px;
+  height: 250px;
   border-left: 5px solid #fff;
+  position: relative;
+}
+.invite p {
+  font-weight: 600;
+  font-size: 12px;
+}
+.invite p:first-child {
+  font-size: 18px;
 }
