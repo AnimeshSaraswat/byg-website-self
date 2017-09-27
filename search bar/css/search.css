@@ -30,6 +30,7 @@ a:hover {
   background-position: right 10px center;
   border-right: 1px solid #aaa;
   color: #777;
+  cursor: pointer;
 }
 .main-search .search-input {
   width: 60%;
@@ -45,7 +46,10 @@ a:hover {
 }
 
 /* location popup */
-.locaton-box {
+.location-popup {
+  display: none;
+}
+.location-box {
   width: 25%;
 }
 .enter-city {
@@ -98,6 +102,22 @@ a:hover {
   line-height: 1;
 }
 
+/* popup development */
+.location-popup.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.location-box.active {
+  width: 25%;
+  position: absolute;
+  top: 20%;
+  left: 6%;
+}
 
 @media only screen and (max-width: 768px) {
   .main-search input, .main-search button {
