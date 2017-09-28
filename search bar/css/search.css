@@ -51,6 +51,7 @@ a:hover {
 }
 .location-box {
   width: 25%;
+  display: none;
 }
 .enter-city {
   background: #ddd;
@@ -111,12 +112,15 @@ a:hover {
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 .location-box.active {
   width: 25%;
   position: absolute;
   top: 20%;
   left: 6%;
+  display: block;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 768px) {
