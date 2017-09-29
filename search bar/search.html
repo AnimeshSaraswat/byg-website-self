@@ -16,30 +16,41 @@
     <div class="container">
       <div class="main-search">
         <form>
-          <input class="dropdown" name="city" id="" placeholder="CHOOSE YOUR LOCATION">
+          <input class="dropdown" id="dropDown" name="city" id="" placeholder="CHOOSE YOUR LOCATION">
           <input class="search-input" type="text" placeholder="SEARCH FOR YOUR FITNESS OPTION">
           <button>SEARCH</button>
           <div class="clearfix"></div>
         </form>
-        <div class="location-popup">
-          <div class="locaton-box">
-            <div class="enter-city">
-              <i class="fa fa-caret-up" aria-hidden="true"></i>
-              <input type="text" placeholder="ENTER YOUR CITY">
-              <span>OR</span>
-            </div>
-            <div class="select-city">
-              <p>SELECT CITY</p>
-              <p><a href="#">Bengaluru, </a><a href="#">Bhubaneshwar, </a><a href="#">Gurugram, </a>
-                <a href="#">Mumbai, </a><a href="#">Navi Mumbai, </a><a href="#">Pune, </a>
-                <a href="#">Thane, </a><a href="#">New Delhi, </a><a href="#">Noida, </a><a href="#">Fardabad, </a>
-                <a href="#">Gazabad, </a><a href="#">Chandgarh, </a><a href="#">Jaipur</a>
-              </p>
-            </div>            
+        <div class="location-box" id="locationBox">
+          <div class="enter-city">
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+            <input type="text" placeholder="ENTER YOUR CITY">
+            <span>OR</span>
+          </div>
+          <div class="select-city">
+            <p>SELECT CITY</p>
+            <p><a href="#">Bengaluru, </a><a href="#">Bhubaneshwar, </a><a href="#">Gurugram, </a>
+              <a href="#">Mumbai, </a><a href="#">Navi Mumbai, </a><a href="#">Pune, </a>
+              <a href="#">Thane, </a><a href="#">New Delhi, </a><a href="#">Noida, </a><a href="#">Fardabad, </a>
+              <a href="#">Gazabad, </a><a href="#">Chandgarh, </a><a href="#">Jaipur</a>
+            </p>
           </div>
         </div>
+        <div class="location-popup" id="locationPopup"></div>
       </div>
     </div>
   </section>
+  <script type="text/javascript">
+    var locationPopTrigger = document.getElementById('dropDown');
+    locationPopTrigger.addEventListener('click', function() {
+      console.log(1);
+      document.getElementById('locationPopup').className += " active";
+      document.getElementById('locationBox').className += " active";
+    });
+    document.getElementById('locationPopup').addEventListener('click', function() {
+      document.getElementById('locationPopup').classList.remove("active");
+      document.getElementById('locationBox').classList.remove("active");
+    })
+  </script>
 </body>
 </html>
