@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+  margin: 0;
+}
+.search-bar {
+  height: 100px;
+  background: #eee;
+}
+.search-result {
+  padding: 40px 0px;
+}
+/* .filter-left {
+
+} */
+.custom-collapse-filter .panel-heading {
+  background: #fff url('../../icons/up.png') no-repeat;
+  background-position: right 20px center;
+  border: none;
+}
+.custom-collapse-filter .panel-heading + hr {
+  margin: 0 15px;
+}
+.custom-collapse-filter .panel {
+  border: none;
+  box-shadow: none;
+}
+.custom-collapse-filter .panel-heading+.panel-collapse>.panel-body {
+  border: none;
+}
+.custom-collapse-filter .panel-title>a {
+  font-weight: 600;
+  font-size: 14px;
+}
+.custom-collapse-filter .panel-body form input, .custom-collapse-filter .panel-body form label {
+  float: left;
+}
+.custom-collapse-filter .panel-body form input {
+  margin-right: 15px;
+  margin-top: 0;
+}
+.custom-collapse-filter .panel-body form input[type='radio']:checked:before {
+  background: red;
+}
+.custom-collapse-filter .panel-body input[type='radio'] {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 0 5px 0px gray inset;
+}
+.custom-collapse-filter .panel-body input[type='radio']:before {
+  content:'';
+  display: block;
+  width: 50%;
+  height: 50%;
+  margin: 21% auto;    
+  border-radius: 50%;    
+}
+.custom-collapse-filter .panel-body form label {
+  display: block;
+  margin: 0;
+  font-size: 13px;
+}
+.custom-collapse-filter .panel-body form span {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}

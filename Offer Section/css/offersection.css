@@ -82,3 +82,12 @@
 .invite p:first-child {
   font-size: 18px;
 }
+
+/* Media Section */
+@media only screen and (max-width: 767px) {
+  .offer-section .workout, .offer-section .lowest-price, .offer-section .invite {
+    border: none ;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+}

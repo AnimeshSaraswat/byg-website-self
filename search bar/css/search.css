@@ -12,6 +12,9 @@ a:hover {
 .main-search {
   padding: 40px 0px;
 }
+.main-search form {
+  position: relative;
+}
 .main-search input, .main-search button {
   float: left;
   border: none;
@@ -31,6 +34,7 @@ a:hover {
   border-right: 1px solid #aaa;
   color: #777;
   cursor: pointer;
+  float: left;
 }
 .main-search .search-input {
   width: 60%;
@@ -44,14 +48,33 @@ a:hover {
   color: #fff;
   padding: 12px;
 }
+.dropdown > p {
+  margin: 0;
+}
 
 /* location popup */
 .location-popup {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(0.5);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: all 1s ease-in-out;
 }
 .location-box {
-  width: 25%;
-  display: none;
+
+  position: absolute;
+  width: 100%;
+  transform: scale(0.5);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
 }
 .enter-city {
   background: #ddd;
@@ -104,30 +127,44 @@ a:hover {
 }
 
 /* popup development */
+
 .location-popup.active {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
 }
 .location-box.active {
-  width: 25%;
+  width: 100%;
   position: absolute;
-  top: 20%;
-  left: 6%;
-  display: block;
+  top: 50px;
+  left: 0;
   z-index: 2;
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {
-  .main-search input, .main-search button {
+  .main-search button, .main-search .dropdown, .main-search .search-input {
     width: 100%;
   }
-  .main-search input {
+  .main-search .dropdown {
+    border: none;
+    border-bottom: 1px solid #aaa;
+  }
+  .main-search .search-input {
     padding-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .main-search .search-input {
+    width: 50%;
+  }
+  .main-search .dropdown {
+    width: 35%;
   }
 }
